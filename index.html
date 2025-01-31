@@ -33,6 +33,26 @@
 
 }
 
+@keyframes hero {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+ 
+  
+
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.hero{
+  display: inline-block;
+  animation: hero 3s ease-out;
+}
+
 </style>
 
 </head>
@@ -90,7 +110,7 @@
      <div class="flex items-center justify-center  ">
         <p class="text-center w-10/12 lg:w-7/12 lg:text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
      </div>
-     <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+     <img class="mx-auto hero" src="c2-assets/hero-vegetables.png" alt="">
 </section>
    </header>
 
@@ -522,7 +542,7 @@
 
 </section>
    </main>
-
+  <!-- --------------footer-------- -->
    <footer class="bg-[#179800] relative ">
 
    <div class="flex justify-center items-center">
