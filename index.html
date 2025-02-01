@@ -15,12 +15,18 @@
     tailwind.config = {
       theme: {
         extend: {
+
+
+         
           colors: {
             clifford: '#da373d',
             'bn':'#179800',
             'bgc': "#EFEBE3",
-             
-          }
+                  
+          },
+
+
+
         }
       }
     }
@@ -52,6 +58,65 @@
   display: inline-block;
   animation: hero 3s ease-out;
 }
+
+.sub-title{
+
+animation: title 3s  ease-in-out  infinite  ;
+
+}
+
+@keyframes title {
+
+  
+  0%{
+    opacity: 0; 
+   
+  }
+
+
+  50%{
+    opacity: 1;
+  }
+
+100%{
+  opacity: 0;
+}
+
+
+}
+
+
+.amn{
+  transform: translateX(-100%);
+  animation: text-anm 3s ease-out forwards;
+}
+
+
+@keyframes text-anm {
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.amn-r{
+  
+  animation: text-amn-r 3s ease-out forwards;
+}
+
+
+@keyframes text-amn-r {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
+
 
 </style>
 
@@ -103,12 +168,12 @@
 
 <section class="container mx-auto w-11/12 my-24 space-y-6">
      <div class="text-center text-3xl md:text-[56px] md:leading-[71px] lg:leading-[71px] font-bold">
-        <h1 class="">Freshness <span class="text-bn">You Can</span>
-            <h1> <span class="text-bn">Count</span> Count On, Prices You’ll Love!</h1> 
+        <h1 class="amn-r">Freshness <span class="text-bn">You Can</span>
+            <h1 class="amn"> <span class="text-bn">Count</span> Count On, Prices You’ll Love!</h1> 
      </div>
 
      <div class="flex items-center justify-center  ">
-        <p class="text-center w-10/12 lg:w-7/12 lg:text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        <p class="text-center w-10/12 lg:w-7/12 lg:text-xl sub-title ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
      </div>
      <img class="mx-auto hero" src="c2-assets/hero-vegetables.png" alt="">
 </section>
@@ -466,8 +531,8 @@
         <h1 class=" text-[16px] lg:text-[40px] text-white">UP to <span class="font-bold"> 40% OFF</span></h1>
       </div>
       
-      <div class="h-[50%]">
-        <img class=""  src="c2-assets/india-gate-mock-up.png" alt="">
+      <div class="">
+        <img class=" h-[150px] w-[120px] lg:w-full lg:h-full"  src="c2-assets/india-gate-mock-up.png" alt="">
       </div>
           </div>
       
@@ -495,7 +560,7 @@
 
     <div class="flex flex-col gap-8 lg:w-1/2 mt-10">
 
-      <div class="collapse collapse-plus  rounded-lg bg-base-200">
+      <div class="collapse collapse-plus  rounded-lg bg-bgc">
         <input type="radio"  class="lg:h-24 md:h-24"  name="my-accordion-3" checked="checked" />
         <div class="collapse-title text-xl  font-medium">What types of vegetable products do you offer?</div>
         <div class="collapse-content ">
@@ -505,7 +570,7 @@
         </div>
       </div>
   
-      <div class="collapse collapse-plus rounded-lg bg-base-200">
+      <div class="collapse collapse-plus rounded-lg bg-bgc">
         <input type="radio"  class="lg:h-24 md:h-24"  name="my-accordion-3" />
         <div class="collapse-title text-xl  font-medium">How can I track my order once it has been placed?</div>
         <div class="collapse-content">
@@ -513,7 +578,7 @@
         </div>
       </div>
   
-      <div class="collapse collapse-plus rounded-xl bg-base-200">
+      <div class="collapse collapse-plus rounded-xl bg-bgc">
         <input type="radio" class="lg:h-24 md:h-24" name="my-accordion-3" />
         <div class="collapse-title text-xl eb font-medium">How do you ensure the quality of your biryani rice?</div>
         <div class="collapse-content">
@@ -521,7 +586,7 @@
         </div>
       </div>
   
-      <div class="collapse collapse-plus rounded-xl bg-base-200">
+      <div class="collapse collapse-plus rounded-xl bg-bgc">
         <input type="radio"  class="lg:h-24 md:h-24"  name="my-accordion-3" />
         <div class="collapse-title  text-xl font-medium">What is your return or refund policy if I receive damaged Products?</div>
         <div class="collapse-content">
@@ -542,6 +607,12 @@
 
 </section>
    </main>
+
+
+
+
+
+
   <!-- --------------footer-------- -->
    <footer class="bg-[#179800] relative ">
 
